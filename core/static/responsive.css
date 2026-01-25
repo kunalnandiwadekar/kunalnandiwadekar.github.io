@@ -1,0 +1,16 @@
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    /* Add tablet styles here */
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    /* Add mobile styles here */
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    /* Add small mobile styles here */
+}
