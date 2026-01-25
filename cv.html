@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV - Kunal Nandiwadekar</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal Nandiwadekar - CV</title>
+    <!-- Load Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide icons -->
+    <script src="https://unpkg.com/lucide-react@latest/dist/umd/lucide.min.js"></script>
+    <!-- Use Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles */
+        :root {
+            --primary-color: #2563eb; /* Blue */
+            --text-color: #1f2937;    /* Dark gray */
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        /* Container for the resume */
+        .resume-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 3rem;
+        }
+
+        /* Section heading style */
+        .section-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            border-bottom: 2px solid #d1d5db;
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1.5rem 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* Project/Education entry styling */
+        .entry {
+            margin-bottom: 1.5rem;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Wrap on small screens */
+        }
+
+        .entry-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .entry-date {
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 500;
+            color: #4b5563; /* gray-600 */
+            flex-shrink: 0; /* Prevent shrinking */
+            margin-left: 1rem;
+        }
+
+        .entry-subtitle {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-color);
+            margin: 0.5rem 0;
+        }
+        
+        .entry-details {
+             font-size: 0.95rem; /* text-base */
+            font-weight: 400;
+            color: #374151; /* gray-700 */
+            margin-top: 0.25rem;
+        }
+
+        /* Styling for bullet points */
+        .entry-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 1rem 0;
+        }
+        
+        .entry-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        .entry-list li:before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .entry-list li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        /* Contact info item */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-color);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-item a {
+            color: #4b5563; /* gray-600 */
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .contact-item a:hover {
+            color: #1d4ed8; /* blue-700 */
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .resume-container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .contact-info {
+                grid-template-columns: 1fr; /* Stack contact info on mobile */
+            }
+            .entry-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .entry-date {
+                margin-left: 0;
+                margin-top: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header class="mb-8 pb-6 border-b border-gray-200">
+            <div class="header-content flex justify-between items-center flex-wrap">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800">KUNAL NANDIWADEKAR</h1>
+                    <p class="text-xl text-gray-600 mt-2">Information Technology Student</p>
+                </div>
+                
+                <!-- Contact Info Grid -->
+                <div class="contact-info grid grid-cols-2 gap-x-6 gap-y-2 mt-4 md:mt-0 text-sm">
+                    <div class="contact-item">
+                        <svg data-lucide="map-pin" class="w-4 h-4 text-gray-500"></svg>
+                        <span>Thane, Maharashtra</span>
+                    </div>
+                    <div class="contact-item">
+                         <svg data-lucide="phone" class="w-4 h-4 text-gray-500"></svg>
+                        <a href="tel:+918451079472" class="hover:text-blue-700">+91 8451079472</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg data-lucide="mail" class="w-4 h-4 text-gray-500"></svg>
+                        <a href="mailto:kunalnandiwadekar2003@gmail.com" class="hover:text-blue-700">kunalnandiwadekar2003@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg data-lucide="linkedin" class="w-4 h-4 text-gray-500"></svg>
+                        <a href="https://linkedin.com/in/kunal-nandiwadekar" target="_blank" rel="noopener noreferrer" class="hover:text-blue-700">linkedin.com/in/kunal-nandiwadekar</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Overview Section -->
+            <section class="mb-8">
+                <h2 class="section-heading">Overview</h2>
+                <p class="text-base text-gray-700 leading-relaxed">
+                    Constantly seeking to engage my knowledge to learn something useful and keep challenging myself to be a better performer in accordance with the company's requirements. Good and quick learner, team player, love to learn new things, flexible with different technologies.
+                </p>
+            </section>
+
+            <!-- Education Section -->
+            <section class="mb-8">
+                <h2 class="section-heading">Education</h2>
+                
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Bachelor of Engineering (B.E.) in Information Technology</h3>
+                        <span class="entry-date">2021-2025</span>
+                    </div>
+                    <p class="entry-subtitle">Alamuri Ratnamala Institute of Engineering & Technology, Thane</p>
+                    <p class="entry-details">CGPA: 6.61</p>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Higher Secondary Certificate (HSC), Science</h3>
+                        <span class="entry-date">2020-2021</span>
+                    </div>
+                    <p class="entry-subtitle">L.D. Sonawane college, Kalyan</p>
+                    <p class="entry-details">Percentage: 84.17%</p>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Secondary School Certificate (SSC)</h3>
+                        <span class="entry-date">2018-2019</span>
+                    </div>
+                    <p class="entry-subtitle">Vidyamandir Manda, Titwala</p>
+                    <p class="entry-details">Percentage: 87.40%</p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="mb-8">
+                <h2 class="section-heading">Projects</h2>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Right to Recall E-Voting System using Blockchain Technology</h3>
+                        <span class="entry-date">2024</span>
+                    </div>
+                    <ul class="entry-list">
+                        <li>Developed a blockchain-enabled e-voting platform ensuring security, transparency, and integrity of the voting process.</li>
+                        <li>Incorporated a performance-based Right to Recall mechanism to enhance voter accountability and governance.</li>
+                        <li>Implemented secure voter authentication via MetaMask and a scalable backend architecture using Node.js, FastAPI, Python, and MySQL.</li>
+                    </ul>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3 class="entry-title">IOT BASED EFFICIENT WATER MANAGEMENT SYSTEM FOR IRRIGATION</h3>
+                        <span class="entry-date">2022</span>
+                    </div>
+                    <ul class="entry-list">
+                        <li>Designed an IoT-enabled solution to optimize water usage in agricultural irrigation.</li>
+                        <li>Integrated soil moisture sensors and intelligent algorithms for real-time monitoring and control.</li>
+                        <li>Implemented using IoT platforms, embedded systems, and data analytics to promote sustainable water management.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Additional Information Section -->
+            <section>
+                <h2 class="section-heading">Additional Information</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="text-base font-semibold text-gray-800 mb-2">Technical Skills</h4>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>PYTHON</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-semibold text-gray-800 mb-2">Languages</h4>
+                         <ul class="list-disc list-inside text-gray-700">
+                            <li>English</li>
+                            <li>Hindi</li>
+                            <li>Marathi</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-semibold text-gray-800 mb-2">Courses</h4>
+                         <ul class="list-disc list-inside text-gray-700">
+                            <li>DBMS</li>
+                            <li>Web Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script to initialize Lucide icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
