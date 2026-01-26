@@ -1,5 +1,7 @@
 # My Portfolio Website
 
+[![Visit Portfolio](https://img.shields.io/badge/Visit-Portfolio-2ea44f?style=for-the-badge&logo=github)](https://kunalnandiwadekar.github.io)
+
 A modern, responsive portfolio website built with Django, HTML, CSS, and JavaScript. This dynamic portfolio showcases my projects, skills, and includes a functional contact form.
 
 ## Features
